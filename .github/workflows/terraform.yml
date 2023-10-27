@@ -3,7 +3,9 @@ name: 'Terraform'
 on: push
 
 env:
+  # to get more detailled output from terraform
   TF_LOG: INFO
+  # avoid terraform prompting us for input that would be bad in an automation context
   TF_INPUT: false
 
 jobs:
